@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Mohammad Ghaheri Blog!</h1>
+<p>I guess its a good solution to publish findings here!</p>
+</body>
+</html>
