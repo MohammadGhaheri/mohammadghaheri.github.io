@@ -1,4 +1,13 @@
 title: Mohammad Ghaheri
-description: Product, Mobility & Data
+description: Product, mobility and data notes by Mohammad Ghaheri.
 url: https://mohammadghaheri.github.io
+baseurl: ""
 markdown: kramdown
+permalink: /articles/:title/
+timezone: Europe/Helsinki
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
