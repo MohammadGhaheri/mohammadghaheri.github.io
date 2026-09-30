@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="page">
   <div class="wrap article">
-    <a class="back" href="{{ '/articles/' | relative_url }}">← All articles</a>
+    <a class="back" href="{{ '/articles/' | relative_url }}">{% if page.lang == 'fa' %}همه مقاله‌ها ←{% else %}← All articles{% endif %}</a>
     <header class="article-header">
       <div class="meta">{{ page.date | date: "%B %-d, %Y" }}</div>
       <h1>{{ page.title }}</h1>
