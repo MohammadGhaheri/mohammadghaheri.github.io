@@ -7,16 +7,27 @@
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <meta name="theme-color" content="#0f172a">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% if page.alt_url %}
+  <link rel="alternate" hreflang="{% if page.lang == 'fa' %}en{% else %}fa{% endif %}" href="{{ page.alt_url | absolute_url }}">
+  {% endif %}
 </head>
 <body>
 <header>
   <div class="wrap">
     <nav>
-      <a class="brand" href="{{ '/' | relative_url }}">Mohammad Ghaheri</a>
+      <a class="brand" href="{% if page.lang == 'fa' %}{{ '/fa/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}">Mohammad Ghaheri</a>
       <div class="navlinks">
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/articles/' | relative_url }}">Articles</a>
+        {% if page.lang == 'fa' %}
+          <a href="{{ '/fa/about/' | relative_url }}">درباره</a>
+          <a href="{{ '/fa/articles/' | relative_url }}">مقاله‌ها</a>
+        {% else %}
+          <a href="{{ '/en/about/' | relative_url }}">About</a>
+          <a href="{{ '/en/articles/' | relative_url }}">Articles</a>
+        {% endif %}
         <a href="https://github.com/MohammadGhaheri" target="_blank" rel="noreferrer">GitHub</a>
+        {% if page.alt_url %}
+          <a class="lang-switch" href="{{ page.alt_url | relative_url }}">{% if page.lang == 'fa' %}EN{% else %}FA{% endif %}</a>
+        {% endif %}
       </div>
     </nav>
   </div>
@@ -27,7 +38,7 @@
 <footer>
   <div class="wrap footerline">
     <span>© {{ 'now' | date: '%Y' }} Mohammad Ghaheri</span>
-    <span>Product · Mobility · Data</span>
+    <span>{% if page.lang == 'fa' %}محصول · حمل‌ونقل هوشمند · داده{% else %}Product · Mobility · Data{% endif %}</span>
   </div>
 </footer>
 </body>
