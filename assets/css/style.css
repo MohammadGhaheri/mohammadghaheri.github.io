@@ -7,3 +7,11 @@ html[dir="rtl"] .article-body{line-height:2}
 html[dir="rtl"] .article-body ul,html[dir="rtl"] .article-body ol{padding-right:1.4rem;padding-left:0}
 html[dir="rtl"] .article-body blockquote{border-left:0;border-right:3px solid var(--accent2);margin-right:0;padding-right:18px;padding-left:0}
 html[dir="rtl"] .tags{justify-content:flex-start}
+
+.hero-profile{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:64px;align-items:center}
+.hero-profile h1{max-width:760px}
+.hero-photo-wrap{display:flex;justify-content:flex-end}
+.hero-photo{width:100%;max-width:320px;aspect-ratio:1/1;object-fit:cover;border-radius:28px;border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.lang-switch{font-weight:800;color:var(--accent2)!important}
+@media(max-width:900px){.hero-profile{grid-template-columns:1fr 220px;gap:36px}.hero-photo{max-width:220px;border-radius:22px}}
+@media(max-width:700px){.hero-profile{grid-template-columns:1fr}.hero-photo-wrap{justify-content:flex-start;order:-1}.hero-photo{max-width:160px;border-radius:18px}}
