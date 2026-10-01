@@ -1,50 +1,15 @@
 ---
 layout: default
 title:
-description: Product, mobility and data notes by Mohammad Ghaheri.
+description: Mohammad Ghaheri — Product, Mobility & Data
+lang: en
 ---
 <div class="wrap hero">
-  <div class="eyebrow">Product · Mobility · Data</div>
-  <h1>Building useful products where mobility, software and data meet.</h1>
-  <p class="lead">I work across smart mobility, connected vehicles, telematics, IoT, data platforms and product strategy — turning operational problems into products that can scale.</p>
+  <div class="eyebrow">Mohammad Ghaheri</div>
+  <h1>Choose your language</h1>
+  <p class="lead">Personal site and working notes on product, smart mobility, connected vehicles, logistics, IoT and data.</p>
   <div class="actions">
-    <a class="btn primary" href="{{ '/articles/' | relative_url }}">Read the articles</a>
-    <a class="btn" href="https://github.com/MohammadGhaheri" target="_blank" rel="noreferrer">View GitHub</a>
+    <a class="btn primary" href="{{ '/en/' | relative_url }}">English</a>
+    <a class="btn" href="{{ '/fa/' | relative_url }}">فارسی</a>
   </div>
 </div>
-
-<section>
-  <div class="wrap">
-    <div class="section-title">Focus areas</div>
-    <div class="grid">
-      <article class="card"><h3>Smart Mobility</h3><p>Connected vehicles, fleet systems, digital services and mobility products built around real operational use cases.</p></article>
-      <article class="card"><h3>Product Strategy</h3><p>Product discovery, service design, monetization, platform thinking and translating domain complexity into clear product decisions.</p></article>
-      <article class="card"><h3>Data & IoT</h3><p>Telematics, data platforms, BI, analytics and the infrastructure required to turn machine data into usable intelligence.</p></article>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-title">Latest writing</div>
-    <div class="writing">
-      <div class="post-list">
-        {% for post in site.posts limit:5 %}
-        <article class="post-item">
-          <a href="{{ post.url | relative_url }}">
-            <div class="meta">{{ post.date | date: "%B %-d, %Y" }}</div>
-            <h3>{{ post.title }}</h3>
-            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-          </a>
-        </article>
-        {% endfor %}
-      </div>
-      <aside class="note">
-        <div class="meta">THIS SITE</div>
-        <h3>A working notebook, not a brochure.</h3>
-        <p>I use this space to publish observations, field notes, technical findings and product thinking from projects in mobility, logistics, connected systems and data.</p>
-        <div class="actions"><a class="btn" href="{{ '/articles/' | relative_url }}">All articles →</a></div>
-      </aside>
-    </div>
-  </div>
-</section>
