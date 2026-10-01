@@ -1,24 +1,12 @@
 ---
 layout: default
 title: Articles
-description: Notes and essays on smart mobility, product, telematics, IoT, logistics and data.
+description: Choose language.
+lang: en
 permalink: /articles/
 ---
-<div class="page">
-  <div class="wrap">
-    <div class="section-title">Writing</div>
-    <h2>Articles & field notes</h2>
-    <p class="intro">Observations, technical findings and product thinking from work across mobility, logistics, connected systems and data.</p>
-    <div class="post-list" style="margin-top:42px;max-width:820px">
-      {% for post in site.posts %}
-      <article class="post-item">
-        <a href="{{ post.url | relative_url }}">
-          <div class="meta">{{ post.date | date: "%B %-d, %Y" }}</div>
-          <h3>{{ post.title }}</h3>
-          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-        </a>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+<div class="page"><div class="wrap article">
+<div class="section-title">Articles</div>
+<h2>Choose your language</h2>
+<div class="actions"><a class="btn primary" href="{{ '/en/articles/' | relative_url }}">English</a><a class="btn" href="{{ '/fa/articles/' | relative_url }}">فارسی</a></div>
+</div></div>
