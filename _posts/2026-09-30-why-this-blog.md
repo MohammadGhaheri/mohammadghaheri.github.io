@@ -3,7 +3,9 @@ layout: post
 title: "Why this blog exists"
 description: "A place for practical notes on connected vehicles, mobility products, logistics, IoT and data."
 date: 2026-09-30
-permalink: /articles/why-this-blog/
+permalink: /en/articles/why-this-blog/
+lang: en
+alt_url: /fa/articles/why-this-blog/
 tags:
   - Product
   - Mobility
