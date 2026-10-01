@@ -3,15 +3,15 @@ layout: default
 ---
 <div class="page">
   <div class="wrap article">
-    <a class="back" href="{{ '/articles/' | relative_url }}">{% if page.lang == 'fa' %}همه مقاله‌ها ←{% else %}← All articles{% endif %}</a>
+    <a class="back" href="{% if page.lang == 'fa' %}{{ '/fa/articles/' | relative_url }}{% else %}{{ '/en/articles/' | relative_url }}{% endif %}">
+      {% if page.lang == 'fa' %}همه مقاله‌ها ←{% else %}← All articles{% endif %}
+    </a>
     <header class="article-header">
       <div class="meta">{{ page.date | date: "%B %-d, %Y" }}</div>
       <h1>{{ page.title }}</h1>
       {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
       {% if page.tags %}
-      <div class="tags">
-        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-      </div>
+      <div class="tags">{% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
       {% endif %}
     </header>
     <article class="article-body">{{ content }}</article>
