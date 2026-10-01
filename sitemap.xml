@@ -5,14 +5,12 @@ permalink: /sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
   <url>
     <loc>{{ '/' | absolute_url }}</loc>
     <xhtml:link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}" />
     <xhtml:link rel="alternate" hreflang="fa" href="{{ '/fa/' | absolute_url }}" />
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}" />
   </url>
-
   <url>
     <loc>{{ '/fa/' | absolute_url }}</loc>
     <xhtml:link rel="alternate" hreflang="fa" href="{{ '/fa/' | absolute_url }}" />
@@ -20,19 +18,11 @@ permalink: /sitemap.xml
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}" />
   </url>
 
-  {% assign static_pages = site.pages | where_exp: "p", "p.sitemap != false" %}
-  {% for p in static_pages %}
-    {% if p.url and p.url != '/' and p.url != '/fa/' and p.url != '/sitemap.xml' and p.url != '/feed.xml' %}
-      {% if p.lang == 'en' or p.lang == 'fa' %}
+  {% assign main_pages = "/en/about/,/fa/about/,/en/articles/,/fa/articles/" | split: "," %}
+  {% for page_url in main_pages %}
   <url>
-    <loc>{{ p.url | absolute_url }}</loc>
-    {% if p.alt_url %}
-    <xhtml:link rel="alternate" hreflang="{{ p.lang }}" href="{{ p.url | absolute_url }}" />
-    <xhtml:link rel="alternate" hreflang="{% if p.lang == 'fa' %}en{% else %}fa{% endif %}" href="{{ p.alt_url | absolute_url }}" />
-    {% endif %}
+    <loc>{{ page_url | absolute_url }}</loc>
   </url>
-      {% endif %}
-    {% endif %}
   {% endfor %}
 
   {% for post in site.posts %}
