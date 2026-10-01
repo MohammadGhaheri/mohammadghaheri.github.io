@@ -3,8 +3,9 @@ layout: post
 title: "بیجک چیست؟ نگاهی به یک پلتفرم اعلام بار آزاد برای حمل‌ونقل جاده‌ای ایران"
 description: "معرفی بیجک، منطق شکل‌گیری آن، سالن‌های اعلام بار، جست‌وجوی بار، رانندگان آماده حمل و مدل بدون کمیسیون از کرایه."
 date: 2026-09-30
-permalink: /articles/bijack-open-load-board-iran/
+permalink: /fa/articles/bijack-open-load-board-iran/
 lang: fa
+alt_url: /en/articles/bijack-open-load-board-iran/
 tags:
   - Bijack
   - Logistics
