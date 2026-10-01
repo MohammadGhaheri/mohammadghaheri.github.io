@@ -1,0 +1,28 @@
+---
+layout: default
+title:
+description: یادداشت‌های محمد قاهری درباره محصول، حمل‌ونقل هوشمند و داده.
+lang: fa
+alt_url: /en/
+permalink: /fa/
+---
+<div class="wrap hero">
+  <div class="eyebrow">محصول · حمل‌ونقل هوشمند · داده</div>
+  <h1>ساخت محصولاتی که نرم‌افزار، داده و دنیای واقعی را به هم وصل می‌کنند.</h1>
+  <p class="lead">روی حمل‌ونقل هوشمند، خودروهای متصل، تلماتیک، اینترنت اشیا، پلتفرم‌های داده و استراتژی محصول کار می‌کنم؛ با تمرکز بر تبدیل مسئله‌های عملیاتی به محصولاتی که بتوانند رشد کنند.</p>
+  <div class="actions">
+    <a class="btn primary" href="{{ '/fa/articles/' | relative_url }}">مطالعه مقاله‌ها</a>
+    <a class="btn" href="https://github.com/MohammadGhaheri" target="_blank" rel="noreferrer">گیت‌هاب</a>
+  </div>
+</div>
+<section><div class="wrap"><div class="section-title">حوزه‌های تمرکز</div><div class="grid">
+<article class="card"><h3>حمل‌ونقل هوشمند</h3><p>خودروهای متصل، سامانه‌های ناوگان، خدمات دیجیتال و محصولاتی که باید در عملیات واقعی کار کنند.</p></article>
+<article class="card"><h3>استراتژی محصول</h3><p>کشف محصول، طراحی خدمت، مدل درآمدی، نگاه پلتفرمی و تبدیل پیچیدگی‌های حوزه به تصمیم‌های روشن محصولی.</p></article>
+<article class="card"><h3>داده و اینترنت اشیا</h3><p>تلماتیک، پلتفرم‌های داده، هوش تجاری، تحلیل داده و زیرساخت لازم برای تبدیل داده ماشین به اطلاعات قابل استفاده.</p></article>
+</div></div></section>
+<section><div class="wrap"><div class="section-title">آخرین نوشته‌ها</div><div class="writing"><div class="post-list">
+{% assign fa_posts = site.posts | where: "lang", "fa" %}
+{% for post in fa_posts limit:5 %}
+<article class="post-item"><a href="{{ post.url | relative_url }}"><div class="meta">{{ post.date | date: "%Y-%m-%d" }}</div><h3>{{ post.title }}</h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}</a></article>
+{% endfor %}
+</div><aside class="note"><div class="meta">این سایت</div><h3>دفتر یادداشت کاری، نه بروشور.</h3><p>اینجا مشاهدات، یافته‌های فنی و تجربه‌های محصولی‌ام از پروژه‌های حمل‌ونقل، لجستیک، سیستم‌های متصل و داده را منتشر می‌کنم.</p><div class="actions"><a class="btn" href="{{ '/fa/articles/' | relative_url }}">همه مقاله‌ها ←</a></div></aside></div></div></section>
