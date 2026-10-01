@@ -15,7 +15,7 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="brand" href="{% if page.lang == 'fa' %}{{ '/fa/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}">Mohammad Ghaheri</a>
+      <a class="brand" href="{% if page.lang == 'fa' %}{{ '/fa/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Mohammad Ghaheri</a>
       <div class="navlinks">
         {% if page.lang == 'fa' %}
           <a href="{{ '/fa/about/' | relative_url }}">درباره</a>
