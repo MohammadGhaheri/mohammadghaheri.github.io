@@ -3,6 +3,7 @@ layout: post
 title: "چرا این بلاگ را ساختم؟"
 description: "جایی برای یادداشت‌های کاربردی درباره خودروهای متصل، محصولات حمل‌ونقل، لجستیک، اینترنت اشیا و داده."
 date: 2026-09-30
+date_fa: "۸ مهر ۱۴۰۵"
 permalink: /fa/articles/why-this-blog/
 lang: fa
 alt_url: /en/articles/why-this-blog/
