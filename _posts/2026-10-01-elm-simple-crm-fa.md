@@ -3,6 +3,7 @@ layout: post
 title: "Elm Simple CRM؛ یک CRM متن‌باز که از یک نیاز واقعی شکل گرفت"
 description: "داستان شکل‌گیری Elm Simple CRM در ماموت کانکت، مسیر تکامل آن از استفاده واقعی، معماری فنی، امکانات اصلی و روش نصب و استفاده از نسخه متن‌باز."
 date: 2026-10-01
+date_fa: "۹ مهر ۱۴۰۵"
 permalink: /fa/articles/elm-simple-crm/
 lang: fa
 alt_url: /en/articles/elm-simple-crm/
