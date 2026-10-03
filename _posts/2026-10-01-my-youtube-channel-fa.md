@@ -3,6 +3,7 @@ layout: post
 title: "کانال یوتیوب من؛ از Power BI تا محصولات داده و سیستم‌های متصل"
 description: "معرفی کانال YouTube محمد قاهری؛ جایی برای آموزش و تجربه‌های واقعی در Power BI، تحلیل داده، IoT، سیستم‌های متصل و حمل‌ونقل هوشمند."
 date: 2026-10-01
+date_fa: "۹ مهر ۱۴۰۵"
 permalink: /fa/articles/my-youtube-channel/
 lang: fa
 alt_url: /en/articles/my-youtube-channel/
