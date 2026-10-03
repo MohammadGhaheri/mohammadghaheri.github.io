@@ -13,6 +13,6 @@ permalink: /fa/articles/
 <div class="post-list" style="margin-top:42px;max-width:820px">
 {% assign fa_posts = site.posts | where: "lang", "fa" %}
 {% for post in fa_posts %}
-<article class="post-item"><a href="{{ post.url | relative_url }}"><div class="meta">{{ post.date | date: "%Y-%m-%d" }}</div><h3>{{ post.title }}</h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}</a></article>
+<article class="post-item"><a href="{{ post.url | relative_url }}"><div class="meta">{{ post.date_fa | default: post.date }}</div><h3>{{ post.title }}</h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}</a></article>
 {% endfor %}
 </div></div></div>
