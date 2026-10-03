@@ -28,6 +28,6 @@ permalink: /fa/
 <section><div class="wrap"><div class="section-title">آخرین نوشته‌ها</div><div class="writing"><div class="post-list">
 {% assign fa_posts = site.posts | where: "lang", "fa" %}
 {% for post in fa_posts limit:5 %}
-<article class="post-item"><a href="{{ post.url | relative_url }}"><div class="meta">{{ post.date | date: "%Y-%m-%d" }}</div><h3>{{ post.title }}</h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}</a></article>
+<article class="post-item"><a href="{{ post.url | relative_url }}"><div class="meta">{{ post.date_fa | default: post.date }}</div><h3>{{ post.title }}</h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}</a></article>
 {% endfor %}
 </div><aside class="note"><div class="meta">این سایت</div><h3>دفتر یادداشت کاری، نه بروشور.</h3><p>اینجا مشاهدات، یافته‌های فنی و تجربه‌های محصولی‌ام از پروژه‌های حمل‌ونقل، لجستیک، سیستم‌های متصل و داده را منتشر می‌کنم.</p><div class="actions"><a class="btn" href="{{ '/fa/articles/' | relative_url }}">همه مقاله‌ها ←</a></div></aside></div></div></section>
