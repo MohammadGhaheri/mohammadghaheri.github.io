@@ -7,7 +7,7 @@ layout: default
       {% if page.lang == 'fa' %}همه مقاله‌ها ←{% else %}← All articles{% endif %}
     </a>
     <header class="article-header">
-      <div class="meta">{{ page.date | date: "%B %-d, %Y" }}</div>
+      <div class="meta">{% if page.lang == 'fa' and page.date_fa %}{{ page.date_fa }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}</div>
       <h1>{{ page.title }}</h1>
       {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
       {% if page.tags %}
