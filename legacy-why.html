@@ -1,14 +1,19 @@
 ---
-layout: default
-title: Why this blog exists
-description: Choose language for this article.
-lang: en
+layout: null
 permalink: /articles/why-this-blog/
+sitemap: false
 ---
-<div class="page"><div class="wrap article">
-<div class="section-title">Article</div>
-<h2>Choose article language</h2>
-<div class="actions">
-<a class="btn primary" href="{{ '/en/articles/why-this-blog/' | relative_url }}">English</a>
-<a class="btn" href="{{ '/fa/articles/why-this-blog/' | relative_url }}">فارسی</a>
-</div></div></div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ '/en/articles/why-this-blog/' | relative_url }}">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ '/en/articles/why-this-blog/' | absolute_url }}">
+  <title>Why this blog exists</title>
+  <script>window.location.replace("{{ '/en/articles/why-this-blog/' | relative_url }}");</script>
+</head>
+<body>
+  <p><a href="{{ '/en/articles/why-this-blog/' | relative_url }}">Continue</a></p>
+</body>
+</html>
