@@ -81,6 +81,10 @@ Once that logic is clear, learners can build analyses such as cumulative sales, 
 
 This is where Power BI starts moving from a reporting tool toward a genuine business-analysis platform.
 
+If you want to study DAX in greater depth, I also created a dedicated DAX course focused on calculation logic, context and practical analytical scenarios:
+
+**[View my dedicated DAX course on Maktabkhooneh →](https://mktb.me/mxbn/)**
+
 ## Practical projects, not just end-of-chapter exercises
 
 The complementary projects were an important part of the course from the beginning.
