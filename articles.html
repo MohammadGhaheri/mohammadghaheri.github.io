@@ -1,12 +1,19 @@
 ---
-layout: default
-title: Articles
-description: Choose language.
-lang: en
+layout: null
 permalink: /articles/
+sitemap: false
 ---
-<div class="page"><div class="wrap article">
-<div class="section-title">Articles</div>
-<h2>Choose your language</h2>
-<div class="actions"><a class="btn primary" href="{{ '/en/articles/' | relative_url }}">English</a><a class="btn" href="{{ '/fa/articles/' | relative_url }}">فارسی</a></div>
-</div></div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ '/en/articles/' | relative_url }}">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ '/en/articles/' | absolute_url }}">
+  <title>Articles by Mohammad Ghaheri</title>
+  <script>window.location.replace("{{ '/en/articles/' | relative_url }}");</script>
+</head>
+<body>
+  <p><a href="{{ '/en/articles/' | relative_url }}">Continue</a></p>
+</body>
+</html>
