@@ -1,12 +1,19 @@
 ---
-layout: default
-title: About
-description: Choose language.
-lang: en
+layout: null
 permalink: /about/
+sitemap: false
 ---
-<div class="page"><div class="wrap article">
-<div class="section-title">About</div>
-<h2>Choose your language</h2>
-<div class="actions"><a class="btn primary" href="{{ '/en/about/' | relative_url }}">English</a><a class="btn" href="{{ '/fa/about/' | relative_url }}">فارسی</a></div>
-</div></div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ '/en/about/' | relative_url }}">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ '/en/about/' | absolute_url }}">
+  <title>About Mohammad Ghaheri</title>
+  <script>window.location.replace("{{ '/en/about/' | relative_url }}");</script>
+</head>
+<body>
+  <p><a href="{{ '/en/about/' | relative_url }}">Continue</a></p>
+</body>
+</html>
