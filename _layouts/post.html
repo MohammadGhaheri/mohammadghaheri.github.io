@@ -15,5 +15,47 @@ layout: default
       {% endif %}
     </header>
     <article class="article-body">{{ content }}</article>
+
+    {% assign related_count = 0 %}
+    {% for candidate in site.posts %}
+      {% if candidate.url != page.url and candidate.lang == page.lang %}
+        {% assign has_shared_tag = false %}
+        {% for tag in page.tags %}
+          {% if candidate.tags contains tag %}
+            {% assign has_shared_tag = true %}
+          {% endif %}
+        {% endfor %}
+        {% if has_shared_tag %}
+          {% assign related_count = related_count | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if related_count > 0 %}
+    <aside class="related-posts" aria-labelledby="related-posts-title">
+      <div class="section-title" id="related-posts-title">{% if page.lang == 'fa' %}مطالب مرتبط{% else %}Related articles{% endif %}</div>
+      <div class="related-grid">
+        {% assign shown = 0 %}
+        {% for candidate in site.posts %}
+          {% if shown < 3 and candidate.url != page.url and candidate.lang == page.lang %}
+            {% assign has_shared_tag = false %}
+            {% for tag in page.tags %}
+              {% if candidate.tags contains tag %}
+                {% assign has_shared_tag = true %}
+              {% endif %}
+            {% endfor %}
+            {% if has_shared_tag %}
+            <a class="related-card" href="{{ candidate.url | relative_url }}">
+              <div class="meta">{% if candidate.lang == 'fa' and candidate.date_fa %}{{ candidate.date_fa }}{% else %}{{ candidate.date | date: "%B %-d, %Y" }}{% endif %}</div>
+              <h3>{{ candidate.title }}</h3>
+              {% if candidate.description %}<p>{{ candidate.description }}</p>{% endif %}
+            </a>
+            {% assign shown = shown | plus: 1 %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </aside>
+    {% endif %}
   </div>
 </div>
